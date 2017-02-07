@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Holy Crap!</title>
+        <link rel="stylesheet" type="text/css" href="validation.css">
+        
+    </head>
+    <body>
+            <h1>Banking Form</h1>
+        
+            <form action="index.html" method="post">
+                <fieldset>
+                        <h3>Basic Info</h3>
+    <!--                    <legend><span class="number">1.</span> Your Basic Info</legend>-->
+                        <label for="name">First Name:</label>
+                        <input type="text" id="name" name="user_fname">
+                        <label for="middle">Middle I:</label>
+                        <input type="text" id="middle" name="user_minintial">
+                        <label for="last">Last Name:</label>
+                        <input type="text" id="last" name="user_lname"><br>
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="user_email" required/>
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="user_phone"><br>
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="user_add">
+                        <label for="city">City:</label>
+                        <input type="text" id="city" name="user_city">
+                        <label for="state">State:</label>
+                        <input type="text" id="state" name="user_state">
+                        <label for="zip">Zip:</label>
+                        <input type="text" id="zip" name="user_zip">
+                </fieldset>
+                <fieldset>
+                    <h3>Employment</h3>
+                        <label for="occupation">Occupation:</label>
+                        <input type="text" id="occupation" name="user_employer">
+                        <label for="employer">Employer:</label>
+                        <input type="text" id="employer" name="user_emp"><br>
+                        <label for="emaddress">Employer Address:</label>
+                        <input type="text" id="emaddress" names="employ_add">
+                        <label for="emcity">City:</label>
+                        <input type="text" id="emcity" name="employ_city">
+                        <label for="emstate">State:</label>
+                        <input type="text" id="emstate" name="employ_state">
+                        <label for="emzip">Zip:</label>
+                        <input type="text" id="emzip" name="employ_zip"><br>
+                        <label for="linked">LinkedIn Profile URL:</label>
+                        <input type="url" id="linked" name="linked" />
+                </fieldset>
+                <fieldset>
+                    <h3>Loan Info</h3>
+                    <label for="loan">Loan Type</label>
+                        <select id="loan" name="loan_type">
+                            <option value="commercial"></option>
+                            <option value="commercial">Commercial</option>
+                            <option value="real_estate">Real Estate</option>
+                            <option value="personal">Personal</option>
+                            <option value="mortgage">Mortgage</option>
+                    
+                        </select>
+                    
+                    <label for="amount">Loan Amount:</label>
+                    <input type="text" id="amount" name="loan_amount"><br>
+                    
+                    <label>Loan Length</label>
+                    <input type="radio" id="loan_length" value="loan_length" name="loanlength">
+                    <label for="loan_length">5 years</label>
+                    <input type="radio" id="loan_length" value="loan_length" name="loanlength">
+                    <label for="loan_length">15 years</label>
+                    <input type="radio" id="loan_length" value="loan_length" name="loanlength">
+                    <label for="loan_length">30 years</label><br>
+                    
+                    <label>Special Conditions</label><br>
+                    
+                        <input type="checkbox" id="payment" value="down_payment" name="loan_conditions">
+                        <label for="payment">I have a Down Payment</label><br>
+
+                        <input type="checkbox" id="out_of_state" value="payment_condition" name="resident_condition">
+                        <label for="out_of_state">Out-of-State resisent</label><br>
+
+                        <input type="checkbox" id="married" value="married_condition" name="user_married">
+                        <label for="conditions">Married</label><br>
+
+                        <input type="checkbox" id="co_sign" value="co_sign_condition" name="user_cosign">
+                        <label for="co_sign">Loan will be cosigned</label><br>
+
+                </fieldset>
+                <fieldset> 
+                    <h3>Feedback</h3>
+                    <label for="comment">Comments:</label>
+                    <textarea id ="comment" name="user_comment"></textarea><br>
+                    <button type="submit">Submit Information</button> 
+                </fieldset>
+                
+               
+            </form>
+        <script src="test.js"></script>
+    </body><br>    
+        <footer class="bottom">&copy Tamela Lerma 2017</footer>
